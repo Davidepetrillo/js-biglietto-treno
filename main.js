@@ -11,20 +11,19 @@ const prezzoFinaleOver = domanda1 * priceTicketOver;
 const prezzoArrotondatoOver = Math.round((prezzoFinaleOver + Number.EPSILON) * 100) / 100;
 
 
-
 if (domanda2 < 18) {
 
     const rispostaOver = document.getElementById('price').innerHTML =`Il prezzo finale del biglietto è ${prezzoArrotondatoUnder}€ `;
 
 }
 
-else if (domanda2 >= 60) {
+else if (domanda2 >= 65) {
 
     const rispostaOver = document.getElementById('price').innerHTML =`Il prezzo finale del biglietto è ${prezzoArrotondatoOver}€ `;
     
 }
 
-else if ((domanda2 >= 18 && domanda2 < 60)) {
+else if ((domanda2 >= 18 && domanda2 < 65)) {
 
     const risposta = document.getElementById('price').innerHTML =`Il prezzo finale del biglietto è ${prezzoArrotondato}€ `;
 
